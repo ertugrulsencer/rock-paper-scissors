@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container, .game-container section.game {
+  max-width: 1244px;
+  width: 85%;
+}
+
+.game-container {
+  display: inherit;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #f6f6f6;
+}
+
+.game-container header.game-header {
+  color: #3295a6;
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 1.5rem auto auto;
+}
+
+.game-container header.user, .game-container header.computer {
+  position: absolute;
+  color: #f8f8f8;
+  top: 0;
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  padding: 0.75rem 1rem;
+  -webkit-text-stroke: 3px black;
+}
+
+.game-container header.user {
+  left: 0;
+}
+
+.game-container header.computer {
+  right: 0;
+}
+
+.game-container section.game {
+  position: relative;
+  border-radius: 0.35rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  border: 4px solid black;
+  background-color: rgba(50, 149, 166, 0.75);
+}
+
+.game-container .center .counter, .game-container .center .game-result {
+  color: #f8f8f8;
+  -webkit-text-stroke: 5px black;
+  font-size: 5rem;
+  font-weight: 800;
+  -webkit-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+}
+
+.game-container .center .game-result {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.game-container .center .game-result.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.game-container .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.game-container .user .icon {
+  left: 150px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.game-container .user .icon.visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.game-container .computer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.game-container .computer .icon {
+  right: 150px;
+}
+
+.game-container .icon {
+  position: absolute;
+  color: #f8f8f8;
+  -webkit-text-stroke: 5px black;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+.game-container .icon.visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.game-container .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.game-container .buttons .btn {
+  cursor: pointer;
+  color: #f8f8f8;
+  margin: 0.5rem 1.5rem;
+  border: 2px solid #3295a6;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  background-color: rgba(50, 149, 166, 0.85);
+  -webkit-transition: background-color 275ms ease-in-out;
+  transition: background-color 275ms ease-in-out;
+}
+
+.game-container .buttons .btn:hover {
+  background-color: rgba(50, 149, 166, 0.65);
+}
+/*# sourceMappingURL=style.css.map */
